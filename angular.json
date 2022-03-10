@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "blog-2nd": {
+    "blog": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -84,15 +84,15 @@
         "serve": {
           "builder": "@angular-builders/custom-webpack:dev-server",
           "options": {
-            "browserTarget": "blog-2nd:build:development",
+            "browserTarget": "blog:build:development",
             "port": 4200
           },
           "configurations": {
             "production": {
-              "browserTarget": "blog-2nd:build:production"
+              "browserTarget": "blog:build:production"
             },
             "development": {
-              "browserTarget": "blog-2nd:build:development"
+              "browserTarget": "blog:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -106,7 +106,7 @@
       }
     }
   },
-  "defaultProject": "blog-2nd",
+  "defaultProject": "blog",
   "cli": {
     "cache": {
       "enabled": true,
